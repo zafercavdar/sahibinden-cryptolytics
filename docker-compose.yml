@@ -1,0 +1,22 @@
+version: '2'
+services:
+  redis:
+    image: redis:3.2.9-alpine
+    ports:
+      - 6379:6379
+  backend:
+    build: .
+    links:
+      - "redis:redis"
+    depends_on:
+      - redis
+    environment:
+      - REDIS_HOST=redis
+      - REDIS_PORT=6379
+      - JOB_QUEUE=cryptolytics_jobs
+      - JOB_STATUS_CHANNEL=job_statuses
+      - LOG_LEVEL=DEBUG
+    volumes:
+      - .:/usr/src/app
+    ports:
+      - 5002:5002
