@@ -13,7 +13,7 @@
 
 ## How it works
   Cryptolytics integrates various ML algorithms from `sklearn` with the data provided from
-  devakademi.com endpoint. Once the Flask app is built in Docker and a user routed "/" on port 5002,
+  <http://devakademi.com> endpoint. Once the Flask app is built in Docker and a user routed "/" on port 5002,
   Flask renders my `line_chart.html` file in `/templates`.
 
   `line_chart.html` file includes data fetching and chart plotting scripts along with update function.
