@@ -24,7 +24,7 @@
   estimated value is calculated from this model.
 
 ## Developer(s)
-  [github.com/zafercavdar](Zafer Çavdar)
+  [https://github.com/zafercavdar](Zafer Çavdar)
 
 ## Contribute
   Just make a new branch and open PR.
